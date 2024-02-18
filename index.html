@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Hannah!</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            user-select: none;
+        }
+
+        body{
+            background-image: linear-gradient(to right,#C9A9A6,#FFB6C1,#F3CFC6);
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .happy{
+            padding: 10px;
+            border: 3px dashed white;
+            animation: pop-up 4s infinite;
+            max-width: 90%;
+        }
+
+        h1{
+            font-size: 50px;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 5px;
+            color: #fff2ee;
+        }
+
+        .flex{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        @keyframes pop-up {
+            0%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(1.1);
+            }
+            100%{
+                transform: scale(1.1);
+            }
+            to{
+                transform: scale(1); 
+            }
+        }
+
+
+        @media (max-width: 426px) {
+            h1{
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="flex">
+        <div class="happy">
+            <h1>Happy Birthday!</h1>
+            <h1 style="color: hotpink;">Hannah</h1>
+        </div>
+        <audio controls>
+            <source src="song.m4a" type="audio/mpeg">
+        </audio>
+    </div>
+
+</body>
+</html>
